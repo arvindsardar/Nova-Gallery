@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import NovaGallery from './components/novaGallery';
+
+const galleryData = [
+	{
+		img: "https://picsum.photos/800"
+	},
+	{
+		img: "https://picsum.photos/801"
+	},
+	{
+		img: "https://picsum.photos/802"
+	},
+	{
+		img: "https://picsum.photos/803"
+	},
+	{
+		img: "https://picsum.photos/804"
+	},
+	{
+		img: "https://picsum.photos/805"
+	},
+	{
+		img: "https://picsum.photos/806"
+	},
+]
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className="App">
+			<header className="App-header">
+				<h1>
+					Nova Gallery
+				</h1>
+			</header>
+			<NovaGallery
+				galleryData = {galleryData}
+			/>
+		</div>
+	);
 }
 
 export default App;
