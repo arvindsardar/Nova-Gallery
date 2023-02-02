@@ -1,4 +1,5 @@
 import NovaGallery from './components/novaGallery';
+import NovaGalleryModule from './components/novaGalleryModule';
 
 const galleryData = [
 	{
@@ -35,6 +36,8 @@ function App() {
 			<NovaGallery
 				galleryData = {galleryData}
 			/>
+			<br />
+			<NovaGalleryModule />
 		</div>
 	);
 }
