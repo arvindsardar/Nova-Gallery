@@ -1,27 +1,27 @@
+import React from 'react';
 import NovaGallery from './components/novaGallery';
-import NovaGalleryModule from './components/novaGalleryModule';
 
 const galleryData = [
 	{
-		img: "https://picsum.photos/800"
+		img: "https://via.placeholder.com/150"
 	},
 	{
-		img: "https://picsum.photos/801"
+		img: "https://via.placeholder.com/150"
 	},
 	{
-		img: "https://picsum.photos/802"
+		img: "https://via.placeholder.com/150"
 	},
 	{
-		img: "https://picsum.photos/803"
+		img: "https://via.placeholder.com/150"
 	},
 	{
-		img: "https://picsum.photos/804"
+		img: "https://via.placeholder.com/150"
 	},
 	{
-		img: "https://picsum.photos/805"
+		img: "https://via.placeholder.com/150"
 	},
 	{
-		img: "https://picsum.photos/806"
+		img: "https://via.placeholder.com/150"
 	},
 ]
 
@@ -33,11 +33,8 @@ function App() {
 					Nova Gallery
 				</h1>
 			</header>
-			<NovaGallery
-				galleryData = {galleryData}
-			/>
+			<NovaGallery />
 			<br />
-			<NovaGalleryModule />
 		</div>
 	);
 }
