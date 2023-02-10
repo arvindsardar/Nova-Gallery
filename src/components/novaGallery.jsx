@@ -47,15 +47,20 @@ const NovaGallery = () => {
 
 			<div className="galleryWrap">
 				{
-					Content && Content.map((slide, index) => {
+					Content && Content.map((item) => {
+						const tags = item.tag;
 						return(
 							<div
 								className='single'
-								key={index}
-								onClick={ () => handleOpenModal(index) }
+								key={item.id}
+								onClick={ () => handleOpenModal(item.id) }
 							>
-								<img src={slide.img} alt='' />
-								<p>{Content.length}</p>
+								<img src={item.img} alt='' />
+								<p>Tags:
+									{tags.map(tag => (
+										<span key={tag}>({tag}) </span>
+									))}
+								</p>
 							</div>
 						)
 					})
