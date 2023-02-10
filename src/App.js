@@ -1,30 +1,6 @@
 import React from 'react';
 import NovaGallery from './components/novaGallery';
 
-const galleryData = [
-	{
-		img: "https://via.placeholder.com/150"
-	},
-	{
-		img: "https://via.placeholder.com/150"
-	},
-	{
-		img: "https://via.placeholder.com/150"
-	},
-	{
-		img: "https://via.placeholder.com/150"
-	},
-	{
-		img: "https://via.placeholder.com/150"
-	},
-	{
-		img: "https://via.placeholder.com/150"
-	},
-	{
-		img: "https://via.placeholder.com/150"
-	},
-]
-
 function App() {
 	return (
 		<div className="App">
