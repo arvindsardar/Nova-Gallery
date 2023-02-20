@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import './novaGallery.css';
+import Content from '../GalleryData.json';
+import './styles.css';
 
-
-
-const NovaGallery = ({galleryData}) => {
+const Gallery = () => {
 	const [slideNumber, setSlideNumber] = useState(0);
 	const [openModal, setOpenModal] = useState(false);
 
@@ -20,13 +19,13 @@ const NovaGallery = ({galleryData}) => {
 	// Previous Image
 	const prevSlide = () => {
 		slideNumber === 0
-		? setSlideNumber( galleryData.length -1 )
+		? setSlideNumber( Content.length -1 )
 		: setSlideNumber( slideNumber - 1 )
 	}
 
 	// Next Image
 	const nextSlide = () => {
-		slideNumber + 1 === galleryData.length
+		slideNumber + 1 === Content.length
 		? setSlideNumber(0)
 		: setSlideNumber(slideNumber + 1)
 	}
@@ -40,22 +39,28 @@ const NovaGallery = ({galleryData}) => {
 				<a className='btnClose' onClick={handleCloseModal}>x</a>
 				<a className='btnPrev' onClick={prevSlide}>«</a>
 				<a className='btnNext' onClick={nextSlide}>»</a>
-				<div className='fullScreenImage'>
-					<img src={galleryData[slideNumber].img} alt='' />
+				<div className='fullScreenImage' onClick={handleCloseModal}>
+					<img src={Content[slideNumber].img} alt='' />
 				</div>
 				</div>
 			}
 
 			<div className="galleryWrap">
 				{
-					galleryData && galleryData.map((slide, index) => {
+					Content && Content.map((item) => {
+						const tags = item.tag;
 						return(
 							<div
 								className='single'
-								key={index}
-								onClick={ () => handleOpenModal(index) }
+								key={item.id}
+								onClick={ () => handleOpenModal(item.id) }
 							>
-								<img src={slide.img} alt='' />
+								<img src={item.img} alt='' />
+								<p>Tags:
+									{tags.map(tag => (
+										<span key={tag}>({tag}) </span>
+									))}
+								</p>
 							</div>
 						)
 					})
@@ -65,4 +70,4 @@ const NovaGallery = ({galleryData}) => {
 	)
 }
 
-export default NovaGallery
+export default Gallery
