@@ -36,12 +36,12 @@ const Gallery = () => {
 
 			{openModal &&
 				<div className='sliderWrap'>
-				<a className='btnClose' onClick={handleCloseModal}>x</a>
-				<a className='btnPrev' onClick={prevSlide}>«</a>
-				<a className='btnNext' onClick={nextSlide}>»</a>
-				<div className='fullScreenImage' onClick={handleCloseModal}>
-					<img src={Content[slideNumber].img} alt='' />
-				</div>
+					<a className='btnClose' onClick={handleCloseModal}>x</a>
+					<a className='btnPrev' onClick={prevSlide}>«</a>
+					<a className='btnNext' onClick={nextSlide}>»</a>
+					<div className='fullScreenImage' onClick={handleCloseModal}>
+						<img src={Content[slideNumber].img} alt='' />
+					</div>
 				</div>
 			}
 
