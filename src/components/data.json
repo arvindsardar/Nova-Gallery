@@ -3,42 +3,49 @@
 		"id": 1,
 		"title": "theTitle1",
 		"img": "https://via.placeholder.com/150?text=JSON1",
-		"tag":["xxx"]
+		"tag":["xxx"],
+		"loc":"qld"
 	},
 	{
 		"id": 2,
 		"title": "theTitle2",
 		"img": "https://via.placeholder.com/150?text=JSON2",
-		"tag":["xxx"]
+		"tag":["xxx","zzz"],
+		"loc":"nsw"
 	},
 	{
 		"id": 3,
 		"title": "theTitle3",
 		"img": "https://via.placeholder.com/150?text=JSON3",
-		"tag":["xxx"]
+		"tag":["xxx"],
+		"loc":"nsw"
 	},
 	{
 		"id": 4,
 		"title": "theTitle4",
 		"img": "https://via.placeholder.com/150?text=JSON4",
-		"tag":["yyy"]
+		"tag":["yyy"],
+		"loc":"nsw"
 	},
 	{
 		"id": 5,
 		"title": "theTitle5",
 		"img": "https://via.placeholder.com/150?text=JSON5",
-		"tag":["yyy"]
+		"tag":["yyy"],
+		"loc":"qld"
 	},
 	{
 		"id": 6,
 		"title": "theTitle6",
 		"img": "https://via.placeholder.com/150?text=JSON6",
-		"tag":["yyy"]
+		"tag":["yyy"],
+		"loc":"nsw"
 	},
 	{
 		"id": 7,
 		"title": "theTitle7",
 		"img": "https://via.placeholder.com/150?text=JSON7",
-		"tag":["xxx","yyy"]
+		"tag":["xxx","yyy"],
+		"loc":"qld"
 	}
 ]

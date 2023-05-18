@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Content from '../GalleryData.json';
+import Content from './data.json';
 import './styles.css';
 
 const Gallery = () => {
@@ -32,8 +32,7 @@ const Gallery = () => {
 
 
 	return (
-		<div>
-
+		<React.Fragment>
 			{openModal &&
 				<div className='sliderWrap'>
 					<a className='btnClose' onClick={handleCloseModal}>x</a>
@@ -66,7 +65,7 @@ const Gallery = () => {
 					})
 				}
 			</div>
-		</div>
+		</React.Fragment>
 	)
 }
 
